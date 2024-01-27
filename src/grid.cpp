@@ -20,7 +20,7 @@ std::vector<std::vector<int>> Grid::gridSlice(int x, int y, int width, int heigh
     for (int i = x; i < x + width; i++) {
         std::vector<int> column;
         for (int j = y; j < y + height; j++) {
-            column.push_back(getCell(i, j));
+            column.push_back(get(i, j));
         }
         slice.push_back(column);
     }
