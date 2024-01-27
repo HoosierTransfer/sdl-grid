@@ -6,8 +6,8 @@
 
 class Grid {
 public:
-    void setCell(int x, int y, int value);
-    int getCell(int x, int y);
+    void set(int x, int y, int value);
+    int get(int x, int y);
     void clear();
     std::vector<std::vector<int>> gridSlice(int x, int y, int width, int height);
 private:

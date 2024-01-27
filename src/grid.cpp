@@ -2,11 +2,11 @@
 #include <vector>
 #include <unordered_map>
 
-void Grid::setCell(int x, int y, int value) {
+void Grid::set(int x, int y, int value) {
     grid[std::make_pair(x, y)] = value;
 }
 
-int Grid::getCell(int x, int y) {
+int Grid::get(int x, int y) {
     auto it = grid.find(std::make_pair(x, y));
     return it == grid.end() ? 0 : it->second;
 }
